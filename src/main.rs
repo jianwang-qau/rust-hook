@@ -76,13 +76,11 @@ fn main() {
     println!("Learning hook process for {}", domain_str);
 
     let target_path = Path::new(auth_hook);
-
     if !target_path.exists() {
         println_err!("Unable to find auth-hook command {} in the PATH.", auth_hook);
         println_err!("(PATH is {})", std::env::var("PATH").unwrap());
         std::process::exit(0);
     }
-
     if !target_path.is_executable() {
         println_err!("auth-hook command {} exists, but is not executable.", auth_hook);
         std::process::exit(0);
