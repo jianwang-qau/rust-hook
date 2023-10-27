@@ -1,4 +1,9 @@
-// main.rs  (C) 2023 Jian Wang
+// SPDX-License-Identifier: GPL-2.0
+/*
+ * main.rs
+ *
+ * (C) 2023 Jian Wang
+*/
 
 use std::path::Path;
 use std::process::Command;
